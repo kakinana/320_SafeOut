@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GoogleController;
+use App\Http\Controllers\PengaduanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use App\Http\Controllers\GoogleController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::middleware([
@@ -30,3 +31,9 @@ Route::middleware([
 
 route::get('auth/google', [GoogleController::class, 'googlepage']);
 route::get('auth/google/callback', [GoogleController::class, 'googlecallback']);
+route::get('/pengaduan',[PengaduanController::class,'index']);
+route::get('/pengaduan/create',[PengaduanController::class,'create']);
+route::post('/pengaduan/store',[PengaduanController::class,'store']);
+route::get('/pengaduan/{id}/edit',[PengaduanController::class,'edit']);
+route::put('/pengaduan/{id}',[PengaduanController::class,'update']);
+route::delete('/pengaduan/{id}',[PengaduanController::class,'destroy']);
