@@ -1,8 +1,14 @@
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
-            <x-authentication-card-logo />
+            <a href="/">
+                <img src="{{ asset('img/perisai-logo.png') }}" alt="My Logo" class="w-20 h-20 fill-current text-gray-500" />
+            </a>
         </x-slot>
+
+        <!-- Boostrap -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style2.css">
 
         <x-validation-errors class="mb-4" />
 
@@ -12,7 +18,7 @@
             </div>
         @endif
 
-        <form method="POST" action="{{ route('login') }}">
+        <!-- <form method="POST" action="{{ route('login') }}">
             @csrf
 
             <div>
@@ -42,10 +48,12 @@
                 <x-button class="ms-4">
                     {{ __('Log in') }}
                 </x-button>
-            </div>
+            </div> -->
 
-            <div>
-                <a style="background-color: skyblue;" href="{{url('auth/google')}}">Login Using Google</a>
+            <div style="margin-top: 0px; text-align: center;">
+                <a class="btn btn-light block focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" href="{{ url('auth/google') }}">
+                    <img src="{{'https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png'}}" class="font-medium text-sm" alt="Google Logo" style="height: 30px; margin-right: 10px;">Sign in Using Google
+                </a>
             </div>
         </form>
     </x-authentication-card>

@@ -15,7 +15,10 @@ use App\Http\Controllers\GoogleController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+Route::get('/contact', function () {
+    return view('contact');
 });
 
 Route::middleware([
@@ -26,6 +29,9 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/user/profile', function () {
+        return view('profile.show'); // Assuming 'profile.show' is the view for showing the user profile
+    })->name('profile.show');
 });
 
 route::get('auth/google', [GoogleController::class, 'googlepage']);
