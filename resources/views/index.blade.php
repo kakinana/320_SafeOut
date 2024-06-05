@@ -7,7 +7,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="icon" href="img/favicon.png" type="image/png" />
+        <link rel="icon" href="img/perisai-logo.png" type="image/png" />
         <title>PERISAI</title>
 
         <!-- Bootstrap CSS -->
@@ -20,6 +20,12 @@
         />
         <link rel="stylesheet" href="css/magnific-popup.css" />
         <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+
+        <!-- Leafer css -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet/dist/leaflet.css"
+        />
 
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css" />
@@ -85,7 +91,7 @@
                                         <li class="nav-item">
                                             <a
                                                 class="nav-link"
-                                                href="blog.html"
+                                                href="blog"
                                             >
                                                 Blog
                                             </a>
@@ -93,7 +99,7 @@
                                         <li class="nav-item">
                                             <a
                                                 class="nav-link"
-                                                href="single-blog.html"
+                                                href="single-blog"
                                             >
                                                 Blog Details
                                             </a>
@@ -101,12 +107,12 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">
+                                    <a class="nav-link" href="contact">
                                         Contact
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">
+                                    <a class="nav-link" href="index">
                                         App
                                     </a>
                                 </li>
@@ -262,7 +268,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
                             <img src="img/services/s1.png" alt="" />
-                            <h4>Wp developing</h4>
+                            <h4>Education</h4>
                             <p>
                                 Creeping for female light years that lesser
                                 can't evening heaven isn't bearing tree
@@ -272,7 +278,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
                             <img src="img/services/s2.png" alt="" />
-                            <h4>UI/ux design</h4>
+                            <h4>Support for Survivors</h4>
                             <p>
                                 Creeping for female light years that lesser
                                 can't evening heaven isn't bearing tree
@@ -282,7 +288,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
                             <img src="img/services/s3.png" alt="" />
-                            <h4>Web design</h4>
+                            <h4>Campaign</h4>
                             <p>
                                 Creeping for female light years that lesser
                                 can't evening heaven isn't bearing tree
@@ -292,7 +298,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
                             <img src="img/services/s4.png" alt="" />
-                            <h4>seo optimize</h4>
+                            <h4>Legal Assistance</h4>
                             <p>
                                 Creeping for female light years that lesser
                                 can't evening heaven isn't bearing tree
@@ -311,7 +317,7 @@
                     <div class="col-lg-12">
                         <div class="main_title text-left">
                             <h2>
-                                Our Past
+                                Our Current
                                 <br />
                                 Contribution
                             </h2>
@@ -321,10 +327,9 @@
                 <div class="filters portfolio-filter">
                     <ul>
                         <li class="active" data-filter="*">all</li>
-                        <li data-filter=".popular">popular</li>
-                        <li data-filter=".latest">latest</li>
-                        <li data-filter=".following">following</li>
-                        <li data-filter=".upcoming">upcoming</li>
+                        <li data-filter=".popular">Education Module</li>
+                        <li data-filter=".latest">Webinar</li>
+                        <li data-filter=".following">News</li>
                     </ul>
                 </div>
 
@@ -585,59 +590,19 @@
         <!--================End Portfolio Area =================-->
 
         <!--================ Start Newsletter Area =================-->
-        <section class="newsletter_area">
+        <!--================Contact Area =================-->
+        <section class="contact_area">
             <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-12">
-                        <div class="subscription_box text-center">
-                            <h2 class="text-uppercase text-white">
-                                get update from anywhere
-                            </h2>
-                            <p class="text-white">
-                                Bearing Void gathering light light his eavening
-                                unto dont afraid.
-                            </p>
-                            <div class="subcribe-form" id="mc_embed_signup">
-                                <form
-                                    target="_blank"
-                                    novalidate="true"
-                                    action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                    method="get"
-                                    class="subscription relative"
-                                >
-                                    <input
-                                        name="EMAIL"
-                                        placeholder="Email address"
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Email address'"
-                                        required=""
-                                        type="email"
-                                    />
-                                    <div
-                                        style="
-                                            position: absolute;
-                                            left: -5000px;
-                                        "
-                                    >
-                                        <input
-                                            name="b_36c4fd991d266f23781ded980_aefe40901a"
-                                            tabindex="-1"
-                                            value=""
-                                            type="text"
-                                        />
-                                    </div>
-                                    <button class="primary-btn hover d-inline">
-                                        Get Started
-                                    </button>
-                                    <div class="info"></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                <div id="mapBox" class="mapBox" 
+                    data-lat="-6.973228" 
+                    data-lon="107.630939" 
+                    data-zoom="13" 
+                    data-info="Telkom University, Bandung, Indonesia."
+                    data-mlat="-6.973228"
+                    data-mlon="107.630939">
                 </div>
             </div>
         </section>
-        <!--================ End Newsletter Area =================-->
 
         <!--================Footer Area =================-->
         <footer class="footer_area">
@@ -647,33 +612,19 @@
                         <div class="footer_top flex-column">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="img/logo.png" alt="" />
+                                    <img src="img/perisai-logo.png" alt="" style="width:150px"/>
                                 </a>
-                                <h4>Follow Me</h4>
-                            </div>
-                            <div class="footer_social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-behance"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row footer_bottom justify-content-center">
                     <p class="col-lg-8 col-sm-12 footer-text">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
                         </script>
-                        All rights reserved | This template is made with
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                        by
-                        <a href="https://colorlib.com" target="_blank">
-                            Colorlib
-                        </a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        All rights reserved | Made by Team 320
                     </p>
                 </div>
             </div>
@@ -688,7 +639,7 @@
         <script src="js/stellar.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <src="vendors/isotope/imagesloaded.pkgd.min.js"></src=>
         <script src="vendors/isotope/isotope-min.js"></script>
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="js/jquery.ajaxchimp.min.js"></script>
