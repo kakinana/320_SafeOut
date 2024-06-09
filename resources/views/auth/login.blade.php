@@ -49,11 +49,6 @@
                     {{ __('Log in') }}
                 </x-button>
             </div> -->
-
-            <div style="margin-top: 30px; text-align: center;">
-                <a class="btn btn-light block focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" href="{{ url('auth/google') }}">
-                    <img src="{{'https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png'}}" class="font-medium text-sm" alt="Google Logo" style="height: 30px; margin-right: 10px;">Sign in Using Google
-                </a>
             <div style="margin-top: 0px; text-align: center;">
                 <a class="btn btn-light block focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" href="{{ url('auth/google') }}">
                     <img src="{{'https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png'}}" class="font-medium text-sm" alt="Google Logo" style="height: 30px; margin-right: 10px;">Sign in Using Google

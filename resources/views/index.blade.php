@@ -89,10 +89,7 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a
-                                                class="nav-link"
-                                                href="blog"
-                                            >
+                                            <a class="nav-link" href="blog">
                                                 Blog
                                             </a>
                                         </li>
@@ -112,9 +109,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index">
-                                        App
-                                    </a>
+                                    <a class="nav-link" href="index">App</a>
                                 </li>
                                 <li class="nav-item">
                                     <a
@@ -201,7 +196,11 @@
                                 gathered cattle let. Creature whales fruit unto
                                 meat the life beginning all in under give two.
                             </p>
-                            <a class="primary_btn" href="#">
+                            <a
+                                class="primary_btn"
+                                href="https://www.instagram.com/perisaiid/"
+                                target="_blank"
+                            >
                                 <span>Visit PERISAI Instagram</span>
                             </a>
                         </div>
@@ -593,14 +592,16 @@
         <!--================Contact Area =================-->
         <section class="contact_area">
             <div class="container">
-                <div id="mapBox" class="mapBox" 
-                    data-lat="-6.973228" 
-                    data-lon="107.630939" 
-                    data-zoom="13" 
+                <div
+                    id="mapBox"
+                    class="mapBox"
+                    data-lat="-6.973228"
+                    data-lon="107.630939"
+                    data-zoom="13"
                     data-info="Telkom University, Bandung, Indonesia."
                     data-mlat="-6.973228"
-                    data-mlon="107.630939">
-                </div>
+                    data-mlon="107.630939"
+                ></div>
             </div>
         </section>
 
@@ -612,7 +613,11 @@
                         <div class="footer_top flex-column">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="img/perisai-logo.png" alt="" style="width:150px"/>
+                                    <img
+                                        src="img/perisai-logo.png"
+                                        alt=""
+                                        style="width: 150px"
+                                    />
                                 </a>
                             </div>
                         </div>
@@ -639,7 +644,7 @@
         <script src="js/stellar.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <src="vendors/isotope/imagesloaded.pkgd.min.js"></src=>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
         <script src="vendors/isotope/isotope-min.js"></script>
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="js/jquery.ajaxchimp.min.js"></script>

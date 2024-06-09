@@ -1,95 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="icon" href="img/perisai-logo.png" type="image/png" />
-    <title>PERISAI</title>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="icon" href="img/perisai-logo.png" type="image/png" />
+        <title>PERISAI</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="vendors/linericon/style.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    <!--================ Start Header Area =================-->
-    <header class="header_area">
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="/">
-                        <img src="img/telu-logo.png" alt="" style="height: 75px" />
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav justify-content-end">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html">Pengaduan</a></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index">App</a></li>
-
-                            @if(Auth::check())
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="vendors/linericon/style.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link
+            rel="stylesheet"
+            href="vendors/owl-carousel/owl.carousel.min.css"
+        />
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet/dist/leaflet.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!--================ Start Header Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand logo_h" href="/">
+                            <img
+                                src="img/telu-logo.png"
+                                alt=""
+                                style="height: 75px"
+                            />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div
+                            class="collapse navbar-collapse offset"
+                            id="navbarSupportedContent"
+                        >
+                            <ul
+                                class="nav navbar-nav menu_nav justify-content-end"
+                            >
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pengaduan">
+                                        Pengaduan
+                                    </a>
+                                </li>
                                 <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        {{ Auth::user()->name }}
+                                    <a
+                                        href="#"
+                                        class="nav-link dropdown-toggle"
+                                        data-toggle="dropdown"
+                                        role="button"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        Blog
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('profile.show') }}">Dashboard</a>
+                                            <a class="nav-link" href="blog">
+                                                Blog
+                                            </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('logout') }}"
-                                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                                Logout
+                                            <a
+                                                class="nav-link"
+                                                href="single-blog"
+                                            >
+                                                Blog Details
                                             </a>
                                         </li>
                                     </ul>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
                                 </li>
-                            @else
                                 <li class="nav-item">
-                                    <a href="{{ route('login') }}" class="nav-link">Log in</a>
+                                    <a class="nav-link" href="contact">
+                                        Contact
+                                    </a>
                                 </li>
-                            @endif
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--================ End Header Area =================-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index">App</a>
+                                </li>
 
-    <!--================ Start Home Banner Area =================-->
-    <section class="home_banner_area">
+                                @if (Auth::check())
+                                    <li class="nav-item submenu dropdown">
+                                        <a
+                                            href="#"
+                                            class="nav-link dropdown-toggle"
+                                            data-toggle="dropdown"
+                                            role="button"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            {{ Auth::user()->name }}
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a
+                                                    class="nav-link"
+                                                    href="{{ route("profile.show") }}"
+                                                >
+                                                    Dashboard
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a
+                                                    class="nav-link"
+                                                    href="{{ route("logout") }}"
+                                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                                >
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <form
+                                            id="logout-form"
+                                            action="{{ route("logout") }}"
+                                            method="POST"
+                                            style="display: none"
+                                        >
+                                            @csrf
+                                        </form>
+                                    </li>
+                                @else
+                                    <li class="nav-item">
+                                        <a
+                                            href="{{ route("login") }}"
+                                            class="nav-link"
+                                        >
+                                            Log in
+                                        </a>
+                                    </li>
+                                @endif
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--================ End Header Area =================-->
+
+        <!--================ Start Home Banner Area =================-->
+        <section class="home_banner_area">
             <div class="banner_inner">
                 <div class="container">
                     <div class="row">
@@ -548,14 +625,16 @@
         <!--================Contact Area =================-->
         <section class="contact_area">
             <div class="container">
-                <div id="mapBox" class="mapBox" 
-                    data-lat="-6.973228" 
-                    data-lon="107.630939" 
-                    data-zoom="13" 
+                <div
+                    id="mapBox"
+                    class="mapBox"
+                    data-lat="-6.973228"
+                    data-lon="107.630939"
+                    data-zoom="13"
                     data-info="Telkom University, Bandung, Indonesia."
                     data-mlat="-6.973228"
-                    data-mlon="107.630939">
-                </div>
+                    data-mlon="107.630939"
+                ></div>
             </div>
         </section>
 
@@ -567,7 +646,11 @@
                         <div class="footer_top flex-column">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="img/perisai-logo.png" alt="" style="width:150px"/>
+                                    <img
+                                        src="img/perisai-logo.png"
+                                        alt=""
+                                        style="width: 150px"
+                                    />
                                 </a>
                             </div>
                         </div>
@@ -586,12 +669,12 @@
         </footer>
         <!--================End Footer Area =================-->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     <!-- Optional JavaScript -->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/popper.js"></script>
@@ -599,7 +682,7 @@
         <script src="js/stellar.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <src="vendors/isotope/imagesloaded.pkgd.min.js"></src=>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
         <script src="vendors/isotope/isotope-min.js"></script>
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="js/jquery.ajaxchimp.min.js"></script>
@@ -608,6 +691,5 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="js/gmaps.min.js"></script>
         <script src="js/theme.js"></script>
-
-</body>
+    </body>
 </html>
