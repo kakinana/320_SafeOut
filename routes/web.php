@@ -33,13 +33,15 @@ Route::middleware([
     Route::get('/user/profile', function () {
         return view('profile.show'); // Assuming 'profile.show' is the view for showing the user profile
     })->name('profile.show');
+    
+    // Apply authentication middleware to /pengaduan routes
+    Route::get('/pengaduan', [PengaduanController::class, 'index'])->name('pengaduan.index');
+    Route::get('/pengaduan/create', [PengaduanController::class, 'create'])->name('pengaduan.create');
+    Route::post('/pengaduan/store', [PengaduanController::class, 'store'])->name('pengaduan.store');
+    Route::get('/pengaduan/{id}/edit', [PengaduanController::class, 'edit'])->name('pengaduan.edit');
+    Route::put('/pengaduan/{id}', [PengaduanController::class, 'update'])->name('pengaduan.update');
+    Route::delete('/pengaduan/{id}', [PengaduanController::class, 'destroy'])->name('pengaduan.destroy');
 });
 
 route::get('auth/google', [GoogleController::class, 'googlepage']);
 route::get('auth/google/callback', [GoogleController::class, 'googlecallback']);
-route::get('/pengaduan',[PengaduanController::class,'index']);
-route::get('/pengaduan/create',[PengaduanController::class,'create']);
-route::post('/pengaduan/store',[PengaduanController::class,'store']);
-route::get('/pengaduan/{id}/edit',[PengaduanController::class,'edit']);
-route::put('/pengaduan/{id}',[PengaduanController::class,'update']);
-route::delete('/pengaduan/{id}',[PengaduanController::class,'destroy']);
