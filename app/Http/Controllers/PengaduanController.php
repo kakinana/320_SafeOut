@@ -23,12 +23,15 @@ class PengaduanController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required|string|max:255',
+            'kategori' => 'required|string',
+            'nama' => 'required|string|max:255',
+            'no_hp' => 'required|string|max:15',
+            'alamat' => 'required|string',
             'description' => 'required|string',
         ]);
 
         $data = $request->except(['_token', 'submit']);
-        $data['user_id'] = Auth::id();  // Set the user_id to the authenticated user's ID
+        $data['user_id'] = Auth::user()->id;  // Set the user_id to the authenticated user's ID
         $data['status'] = 'pending';
 
         Pengaduan::create($data);

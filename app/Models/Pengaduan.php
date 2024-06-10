@@ -12,8 +12,9 @@ class Pengaduan extends Model
     protected $table = 'pengaduan';
     
     protected $fillable = [
-        'kategori', 'nama', 'no_hp', 'alamat', 'description'
+        'kategori', 'nama', 'no_hp', 'alamat', 'description', 'user_id'
     ];
+    
 
     protected $casts = [
         'kategori' => 'string', // Mengonversi kategori ke string

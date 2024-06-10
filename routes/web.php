@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\PengaduanController;
+use App\Http\Controllers\BotManController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +46,9 @@ Route::middleware([
 
 route::get('auth/google', [GoogleController::class, 'googlepage']);
 route::get('auth/google/callback', [GoogleController::class, 'googlecallback']);
+
+// Route for BotMan
+Route::get('/botman', function() {
+    return view('pengaduan.botman');
+});
+Route::match(['get', 'post'], '/botman', [BotManController::class, 'handle']);

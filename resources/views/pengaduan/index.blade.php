@@ -37,3 +37,4 @@
 
 
 <a href="/pengaduan/create">BUAT LAPORAN</a>
+<a href="/dashboard">Back to Home</a>
