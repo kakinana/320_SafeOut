@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PengaduanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,9 @@ use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
     return view('index');
+});
+Route::get('/contact', function () {
+    return view('contact');
 });
 
 Route::get('/blog', function () {
@@ -33,6 +37,17 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/user/profile', function () {
+        return view('profile.show'); // Assuming 'profile.show' is the view for showing the user profile
+    })->name('profile.show');
+    
+    // Apply authentication middleware to /pengaduan routes
+    Route::get('/pengaduan', [PengaduanController::class, 'index'])->name('pengaduan.index');
+    Route::get('/pengaduan/create', [PengaduanController::class, 'create'])->name('pengaduan.create');
+    Route::post('/pengaduan/store', [PengaduanController::class, 'store'])->name('pengaduan.store');
+    Route::get('/pengaduan/{id}/edit', [PengaduanController::class, 'edit'])->name('pengaduan.edit');
+    Route::put('/pengaduan/{id}', [PengaduanController::class, 'update'])->name('pengaduan.update');
+    Route::delete('/pengaduan/{id}', [PengaduanController::class, 'destroy'])->name('pengaduan.destroy');
 });
 
 route::get('auth/google', [GoogleController::class, 'googlepage']);

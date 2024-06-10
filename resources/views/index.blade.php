@@ -8,6 +8,7 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link rel="icon" href="img/favicon.png" type="image/png" />
+        <link rel="icon" href="img/perisai-logo.png" type="image/png" />
         <title>PERISAI</title>
 
         <!-- Bootstrap CSS -->
@@ -20,6 +21,12 @@
         />
         <link rel="stylesheet" href="css/magnific-popup.css" />
         <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+
+        <!-- Leafer css -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet/dist/leaflet.css"
+        />
 
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css" />
@@ -66,7 +73,11 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
+<<<<<<< HEAD
                                     <a class="nav-link" href="index.html">
+=======
+                                    <a class="nav-link" href="/pengaduan">
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                                         Pengaduan
                                     </a>
                                 </li>
@@ -83,17 +94,25 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
+<<<<<<< HEAD
                                             <a
                                                 class="nav-link"
                                                 href="blog.html"
                                             >
+=======
+                                            <a class="nav-link" href="blog">
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                                                 Blog
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a
                                                 class="nav-link"
+<<<<<<< HEAD
                                                 href="single-blog.html"
+=======
+                                                href="single-blog"
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                                             >
                                                 Blog Details
                                             </a>
@@ -101,14 +120,22 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
+<<<<<<< HEAD
                                     <a class="nav-link" href="contact.html">
+=======
+                                    <a class="nav-link" href="contact">
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                                         Contact
                                     </a>
                                 </li>
                                 <li class="nav-item">
+<<<<<<< HEAD
                                     <a class="nav-link" href="index.html">
                                         App
                                     </a>
+=======
+                                    <a class="nav-link" href="index">App</a>
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                                 </li>
                                 <li class="nav-item">
                                     <a
@@ -195,7 +222,15 @@
                                 gathered cattle let. Creature whales fruit unto
                                 meat the life beginning all in under give two.
                             </p>
+<<<<<<< HEAD
                             <a class="primary_btn" href="#">
+=======
+                            <a
+                                class="primary_btn"
+                                href="https://www.instagram.com/perisaiid/"
+                                target="_blank"
+                            >
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                                 <span>Visit PERISAI Instagram</span>
                             </a>
                         </div>
@@ -262,7 +297,11 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
                             <img src="img/services/s1.png" alt="" />
+<<<<<<< HEAD
                             <h4>Wp developing</h4>
+=======
+                            <h4>Education</h4>
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                             <p>
                                 Creeping for female light years that lesser
                                 can't evening heaven isn't bearing tree
@@ -272,7 +311,11 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
                             <img src="img/services/s2.png" alt="" />
+<<<<<<< HEAD
                             <h4>UI/ux design</h4>
+=======
+                            <h4>Support for Survivors</h4>
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                             <p>
                                 Creeping for female light years that lesser
                                 can't evening heaven isn't bearing tree
@@ -282,7 +325,11 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
                             <img src="img/services/s3.png" alt="" />
+<<<<<<< HEAD
                             <h4>Web design</h4>
+=======
+                            <h4>Campaign</h4>
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                             <p>
                                 Creeping for female light years that lesser
                                 can't evening heaven isn't bearing tree
@@ -292,7 +339,11 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
                             <img src="img/services/s4.png" alt="" />
+<<<<<<< HEAD
                             <h4>seo optimize</h4>
+=======
+                            <h4>Legal Assistance</h4>
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                             <p>
                                 Creeping for female light years that lesser
                                 can't evening heaven isn't bearing tree
@@ -311,7 +362,11 @@
                     <div class="col-lg-12">
                         <div class="main_title text-left">
                             <h2>
+<<<<<<< HEAD
                                 Our Past
+=======
+                                Our Current
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                                 <br />
                                 Contribution
                             </h2>
@@ -321,10 +376,16 @@
                 <div class="filters portfolio-filter">
                     <ul>
                         <li class="active" data-filter="*">all</li>
+<<<<<<< HEAD
                         <li data-filter=".popular">popular</li>
                         <li data-filter=".latest">latest</li>
                         <li data-filter=".following">following</li>
                         <li data-filter=".upcoming">upcoming</li>
+=======
+                        <li data-filter=".popular">Education Module</li>
+                        <li data-filter=".latest">Webinar</li>
+                        <li data-filter=".following">News</li>
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                     </ul>
                 </div>
 
@@ -585,6 +646,7 @@
         <!--================End Portfolio Area =================-->
 
         <!--================ Start Newsletter Area =================-->
+<<<<<<< HEAD
         <section class="newsletter_area">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
@@ -638,6 +700,23 @@
             </div>
         </section>
         <!--================ End Newsletter Area =================-->
+=======
+        <!--================Contact Area =================-->
+        <section class="contact_area">
+            <div class="container">
+                <div
+                    id="mapBox"
+                    class="mapBox"
+                    data-lat="-6.973228"
+                    data-lon="107.630939"
+                    data-zoom="13"
+                    data-info="Telkom University, Bandung, Indonesia."
+                    data-mlat="-6.973228"
+                    data-mlon="107.630939"
+                ></div>
+            </div>
+        </section>
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
 
         <!--================Footer Area =================-->
         <footer class="footer_area">
@@ -647,6 +726,7 @@
                         <div class="footer_top flex-column">
                             <div class="footer_logo">
                                 <a href="#">
+<<<<<<< HEAD
                                     <img src="img/logo.png" alt="" />
                                 </a>
                                 <h4>Follow Me</h4>
@@ -656,17 +736,29 @@
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="#"><i class="fa fa-dribbble"></i></a>
                                 <a href="#"><i class="fa fa-behance"></i></a>
+=======
+                                    <img
+                                        src="img/perisai-logo.png"
+                                        alt=""
+                                        style="width: 150px"
+                                    />
+                                </a>
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row footer_bottom justify-content-center">
                     <p class="col-lg-8 col-sm-12 footer-text">
+<<<<<<< HEAD
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+=======
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                         Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
                         </script>
+<<<<<<< HEAD
                         All rights reserved | This template is made with
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                         by
@@ -674,6 +766,9 @@
                             Colorlib
                         </a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+=======
+                        All rights reserved | Made by Team 320
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                     </p>
                 </div>
             </div>
