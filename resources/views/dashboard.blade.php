@@ -62,9 +62,7 @@
                                 class="nav navbar-nav menu_nav justify-content-end"
                             >
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="/">
-                                        Home
-                                    </a>
+                                    <a class="nav-link" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/pengaduan">
@@ -75,7 +73,6 @@
                                     <a
                                         href="blog"
                                         class="nav-link dropdown-toggle"
-
                                     >
                                         Blog
                                     </a>
@@ -161,11 +158,11 @@
                                     Indonesia
                                 </h5>
                                 <div class="d-flex align-items-center">
-                                    <a class="primary_btn" href="#">
+                                    <a class="primary_btn" href="pengaduan">
                                         <span>Isi Pengaduan</span>
                                     </a>
-                                    <a class="primary_btn tr-bg" href="#">
-                                        <span>Download App PERISAI</span>
+                                    <a class="primary_btn tr-bg" href="chatbot">
+                                        <span>Ngobrol sama Teman PERISAI</span>
                                     </a>
                                 </div>
                             </div>
@@ -199,24 +196,30 @@
                     <div class="offset-lg-1 col-lg-5">
                         <div class="main_title text-left">
                             <h2>
-                                Get to know
+                                Kenalan dulu
                                 <br />
-                                with PERISAI
+                                dengan PERISAI
                             </h2>
                             <p>
-                                Whose given. Were gathered. There first subdue
-                                greater. Bearing you Whales heaven midst their.
-                                Beast creepeth. Fish days.
+                                PERISAI (Perlindungan dari Kekerasan Seksual di
+                                Indonesia) adalah sebuah inisiatif atau
+                                organisasi yang bekerja untuk melawan kekerasan
+                                seksual di Indonesia secara lebih luas.
+                                Organisasi atau inisiatif ini bertujuan untuk
+                                memberikan perlindungan, edukasi, advokasi, dan
+                                dukungan kepada korban kekerasan seksual di
+                                berbagai wilayah Indonesia.
                             </p>
                             <p>
-                                Is give may shall likeness made yielding spirit
-                                a itself together created after sea is in beast
-                                beginning signs open god you're gathering whose
-                                gathered cattle let. Creature whales fruit unto
-                                meat the life beginning all in under give two.
+                                PERISAI bertujuan untuk menciptakan lingkungan
+                                yang lebih aman bagi semua orang, khususnya
+                                perempuan dan anak-anak, dengan berupaya
+                                mengurangi insiden kekerasan seksual dan
+                                memberikan dukungan yang diperlukan bagi para
+                                korban untuk pulih dan mendapatkan keadilan.
                             </p>
-                            <a class="primary_btn" href="#">
-                                <span>Visit PERISAI Instagram</span>
+                            <a class="primary_btn" href="app">
+                                <span>Dapatkan APP PERISAI!</span>
                             </a>
                         </div>
                     </div>
@@ -238,7 +241,7 @@
                                     <div class="d-flex mb-50">
                                         <span class="lage">2+</span>
                                         <span class="smll">
-                                            Years Developing Indonesia
+                                            tahun membangun Indonesia
                                         </span>
                                     </div>
                                 </div>
@@ -267,13 +270,11 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
                         <div class="main_title">
-                            <h2>What we have been doing</h2>
+                            <h2>Apa saja yang sudah kita kerjakan?</h2>
                             <p>
-                                Is give may shall likeness made yielding spirit
-                                a itself togeth created after sea
+                                Semua orang tentunya ingin aksi nyata
                                 <br />
-                                is in beast beginning signs open god you're
-                                gathering ithe
+                                Bukan hanya omon omon saja, ini lah aksi kita!
                             </p>
                         </div>
                     </div>
@@ -281,41 +282,57 @@
                 <div class="row feature_inner">
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
-                            <img src="img/services/s1.png" alt="" />
+                            <img
+                                src="img/services/s1.png"
+                                alt="logo1"
+                                style="width: 69px"
+                            />
                             <h4>Education</h4>
                             <p>
-                                Creeping for female light years that lesser
-                                can't evening heaven isn't bearing tree
+                                Mengedukasi pemuda Indonesia, untuk masa depan
+                                dengan penuh kesetaraan
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
-                            <img src="img/services/s2.png" alt="" />
+                            <img
+                                src="img/services/s2.png"
+                                alt="logo1"
+                                style="width: 69px"
+                            />
                             <h4>Support for Survivors</h4>
                             <p>
-                                Creeping for female light years that lesser
-                                can't evening heaven isn't bearing tree
+                                Mereka itu bukanlah korban, tapi Survivors untuk
+                                dapat bertahan! Yuk dampingi mereka
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
-                            <img src="img/services/s3.png" alt="" />
+                            <img
+                                src="img/services/s3.png"
+                                alt="logo1"
+                                style="width: 69px"
+                            />
                             <h4>Campaign</h4>
                             <p>
-                                Creeping for female light years that lesser
-                                can't evening heaven isn't bearing tree
+                                Kalo pemerintah lama, ya kita yang gerak
+                                terlebih dahulu!
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature_item">
-                            <img src="img/services/s4.png" alt="" />
+                            <img
+                                src="img/services/s4.png"
+                                alt="logo1"
+                                style="width: 69px"
+                            />
                             <h4>Legal Assistance</h4>
                             <p>
-                                Creeping for female light years that lesser
-                                can't evening heaven isn't bearing tree
+                                Negara hukum tapi selalu tajam kebawah dan
+                                runcing ke atas, bisa bisanya.
                             </p>
                         </div>
                     </div>
@@ -331,9 +348,9 @@
                     <div class="col-lg-12">
                         <div class="main_title text-left">
                             <h2>
-                                Our Current
+                                Yang sedang kami
                                 <br />
-                                Contribution
+                                kerjakan
                             </h2>
                         </div>
                     </div>
@@ -354,12 +371,12 @@
                                 <div class="single_portfolio">
                                     <img
                                         class="img-fluid w-100"
-                                        src="img/portfolio/p1.jpg"
+                                        src="https://www.medcofoundation.org/media/sd-tertinggal.jpg"
                                         alt=""
                                     />
                                     <div class="overlay"></div>
                                     <a
-                                        href="img/portfolio/p1.jpg"
+                                        href="https://www.medcofoundation.org/media/sd-tertinggal.jpg"
                                         class="img-gal"
                                     >
                                         <div class="icon">
@@ -369,11 +386,13 @@
                                 </div>
                                 <div class="short_info">
                                     <h4>
-                                        <a href="portfolio-details.html">
-                                            minimal design
+                                        <a
+                                            href="https://www.medcofoundation.org/media/sd-tertinggal.jpg"
+                                        >
+                                            Edukasi
                                         </a>
                                     </h4>
-                                    <p>Animated, portfolio</p>
+                                    <p>ke sekolah</p>
                                 </div>
                             </div>
                         </div>
@@ -382,12 +401,12 @@
                                 <div class="single_portfolio">
                                     <img
                                         class="img-fluid w-100"
-                                        src="img/portfolio/p2.jpg"
+                                        src="https://ditsmp.kemdikbud.go.id/wp-content/uploads/2021/10/Strategi-Pendidikan-Seksualitas-Bagi-Remaja-SMP-di-Sekolah-1-min.jpg"
                                         alt=""
                                     />
                                     <div class="overlay"></div>
                                     <a
-                                        href="img/portfolio/p2.jpg"
+                                        href="https://ditsmp.kemdikbud.go.id/wp-content/uploads/2021/10/Strategi-Pendidikan-Seksualitas-Bagi-Remaja-SMP-di-Sekolah-1-min.jpg"
                                         class="img-gal"
                                     >
                                         <div class="icon">
@@ -398,10 +417,10 @@
                                 <div class="short_info">
                                     <h4>
                                         <a href="portfolio-details.html">
-                                            Paint wall
+                                            Pendidikan Seks
                                         </a>
                                     </h4>
-                                    <p>Animated, portfolio</p>
+                                    <p>Semenjak dini</p>
                                 </div>
                             </div>
                         </div>
@@ -410,12 +429,12 @@
                                 <div class="single_portfolio">
                                     <img
                                         class="img-fluid w-100"
-                                        src="img/portfolio/p3.jpg"
+                                        src="https://www.perempuanberkisah.id/wp-content/uploads/2022/04/Desain-tanpa-judul-34.jpg"
                                         alt=""
                                     />
                                     <div class="overlay"></div>
                                     <a
-                                        href="img/portfolio/p3.jpg"
+                                        href="https://www.perempuanberkisah.id/wp-content/uploads/2022/04/Desain-tanpa-judul-34.jpg"
                                         class="img-gal"
                                     >
                                         <div class="icon">
@@ -426,10 +445,13 @@
                                 <div class="short_info">
                                     <h4>
                                         <a href="portfolio-details.html">
-                                            female light
+                                            Pertolonga
                                         </a>
                                     </h4>
-                                    <p>Animated, portfolio</p>
+                                    <p>
+                                        Pertolongan pertama kepada para
+                                        survivors
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -438,12 +460,12 @@
                                 <div class="single_portfolio">
                                     <img
                                         class="img-fluid w-100"
-                                        src="img/portfolio/p4.jpg"
+                                        src="https://www.smkmulu.sch.id/media_library/posts/large/d063a208221d977f048b66f6c1374c52.jpg"
                                         alt=""
                                     />
                                     <div class="overlay"></div>
                                     <a
-                                        href="img/portfolio/p4.jpg"
+                                        href="https://www.smkmulu.sch.id/media_library/posts/large/d063a208221d977f048b66f6c1374c52.jpg"
                                         class="img-gal"
                                     >
                                         <div class="icon">
@@ -454,10 +476,10 @@
                                 <div class="short_info">
                                     <h4>
                                         <a href="portfolio-details.html">
-                                            fourth air
+                                            Sosialisasi
                                         </a>
                                     </h4>
-                                    <p>Animated, portfolio</p>
+                                    <p>Ke berbagai kota</p>
                                 </div>
                             </div>
                         </div>
@@ -466,12 +488,12 @@
                                 <div class="single_portfolio">
                                     <img
                                         class="img-fluid w-100"
-                                        src="img/portfolio/p6.jpg"
+                                        src="https://img.okezone.com/content/2019/02/21/33/2021052/maudy-ayunda-rilis-buku-yang-ditulis-saat-usianya-masih-10-tahun-oprPK7k10T.jpg"
                                         alt=""
                                     />
                                     <div class="overlay"></div>
                                     <a
-                                        href="img/portfolio/p5.jpg"
+                                        href="https://img.okezone.com/content/2019/02/21/33/2021052/maudy-ayunda-rilis-buku-yang-ditulis-saat-usianya-masih-10-tahun-oprPK7k10T.jpg"
                                         class="img-gal"
                                     >
                                         <div class="icon">
@@ -482,10 +504,10 @@
                                 <div class="short_info">
                                     <h4>
                                         <a href="portfolio-details.html">
-                                            together sign
+                                            Rilis buku
                                         </a>
                                     </h4>
-                                    <p>Animated, portfolio</p>
+                                    <p>Untuk membantu operasional</p>
                                 </div>
                             </div>
                         </div>
@@ -494,12 +516,12 @@
                                 <div class="single_portfolio">
                                     <img
                                         class="img-fluid w-100"
-                                        src="img/portfolio/p5.jpg"
+                                        src="https://cdn.idntimes.com/content-images/post/20210202/4-673ec500826d82087e1a779d88fbd746.PNG"
                                         alt=""
                                     />
                                     <div class="overlay"></div>
                                     <a
-                                        href="img/portfolio/p6.jpg"
+                                        href="https://cdn.idntimes.com/content-images/post/20210202/4-673ec500826d82087e1a779d88fbd746.PNG"
                                         class="img-gal"
                                     >
                                         <div class="icon">
@@ -510,10 +532,13 @@
                                 <div class="short_info">
                                     <h4>
                                         <a href="portfolio-details.html">
-                                            multiply fowl
+                                            Rilis Aplikasi
                                         </a>
                                     </h4>
-                                    <p>Animated, portfolio</p>
+                                    <p>
+                                        Agar panic button dapat diakses semua
+                                        orang
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -522,12 +547,12 @@
                                 <div class="single_portfolio">
                                     <img
                                         class="img-fluid w-100"
-                                        src="img/portfolio/p7.jpg"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNZA5aGZV-fKsW4oGN4J1Sqsy4Qlo6Z8XwqA&s"
                                         alt=""
                                     />
                                     <div class="overlay"></div>
                                     <a
-                                        href="img/portfolio/p7.jpg"
+                                        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNZA5aGZV-fKsW4oGN4J1Sqsy4Qlo6Z8XwqA&s"
                                         class="img-gal"
                                     >
                                         <div class="icon">
@@ -538,10 +563,10 @@
                                 <div class="short_info">
                                     <h4>
                                         <a href="portfolio-details.html">
-                                            green heaven
+                                            Kuasa Hukum
                                         </a>
                                     </h4>
-                                    <p>Animated, portfolio</p>
+                                    <p>Kuasa hukum bagi survivors</p>
                                 </div>
                             </div>
                         </div>
@@ -550,12 +575,12 @@
                                 <div class="single_portfolio">
                                     <img
                                         class="img-fluid w-100"
-                                        src="img/portfolio/p8.jpg"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbfRgWZkDfcwDH4YSSFxPm-sCZ-XB0RziA0A&s"
                                         alt=""
                                     />
                                     <div class="overlay"></div>
                                     <a
-                                        href="img/portfolio/p8.jpg"
+                                        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbfRgWZkDfcwDH4YSSFxPm-sCZ-XB0RziA0A&s"
                                         class="img-gal"
                                     >
                                         <div class="icon">
@@ -564,8 +589,8 @@
                                     </a>
                                 </div>
                                 <div class="short_info">
-                                    <h4>fly male</h4>
-                                    <p>Animated, portfolio</p>
+                                    <h4>Berkolaborasi</h4>
+                                    <p>Dengan ibu hebat</p>
                                 </div>
                             </div>
                         </div>
@@ -574,12 +599,12 @@
                                 <div class="single_portfolio">
                                     <img
                                         class="img-fluid w-100"
-                                        src="img/portfolio/p9.jpg"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5X4V22-CUQKCPOCJFBn6q6zYISAhtaA1jLA&s"
                                         alt=""
                                     />
                                     <div class="overlay"></div>
                                     <a
-                                        href="img/portfolio/p9.jpg"
+                                        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5X4V22-CUQKCPOCJFBn6q6zYISAhtaA1jLA&s"
                                         class="img-gal"
                                     >
                                         <div class="icon">
@@ -590,10 +615,10 @@
                                 <div class="short_info">
                                     <h4>
                                         <a href="portfolio-details.html">
-                                            season face
+                                            Lingkungan Kampus
                                         </a>
                                     </h4>
-                                    <p>Animated, portfolio</p>
+                                    <p>yang lebih aman</p>
                                 </div>
                             </div>
                         </div>

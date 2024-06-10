@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PERISAI</title>
+        <link rel="icon" href="img/perisai-logo.png" type="image/png" />
         <link rel="stylesheet" href="css/app.css" />
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css" />
@@ -165,6 +166,13 @@
                         class="bg-blue-500 text-black px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 btn btn-primary"
                     >
                         Sini kalau ada cerita!
+                    </a>
+
+                    <a
+                        href="/chatbot"
+                        class="bg-blue-500 text-black px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 btn btn-secondary"
+                    >
+                        Ngobrol saja dengan Teman PERISAI
                     </a>
                 </div>
             </div>
