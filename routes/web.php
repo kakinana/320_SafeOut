@@ -5,6 +5,7 @@ use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PengaduanController;
 use App\Http\Controllers\BotManController;
+use App\Http\Controllers\ChatBotController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,12 @@ Route::get('/contact', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
+
+Route::get('/chatbot', function (){
+    return view('chatbot');
+});
+
+Route::post('send', [ChatBotController::class, 'sendChat']);
 
 Route::get('/get_posts', [PostController::class, 'getPosts']);
 
