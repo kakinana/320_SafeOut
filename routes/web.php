@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GoogleController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\PengaduanController;
 use App\Http\Controllers\BotManController;
 
@@ -22,6 +23,12 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/blog', function () {
+    return view('blog');
+});
+
+Route::get('/get_posts', [PostController::class, 'getPosts']);
 
 Route::middleware([
     'auth:sanctum',

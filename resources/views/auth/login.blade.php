@@ -8,6 +8,7 @@
 
         <!-- Boostrap -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style2.css">
 
         <x-validation-errors class="mb-4" />
@@ -48,8 +49,14 @@
                 <x-button class="ms-4">
                     {{ __('Log in') }}
                 </x-button>
+<<<<<<< HEAD
+            </div>
+
+            <div style="margin-top: 30px; text-align: center;">
+=======
             </div> -->
             <div style="margin-top: 0px; text-align: center;">
+>>>>>>> cf7a4e347a3d00555e183089e1c4117de701434f
                 <a class="btn btn-light block focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" href="{{ url('auth/google') }}">
                     <img src="{{'https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png'}}" class="font-medium text-sm" alt="Google Logo" style="height: 30px; margin-right: 10px;">Sign in Using Google
                 </a>

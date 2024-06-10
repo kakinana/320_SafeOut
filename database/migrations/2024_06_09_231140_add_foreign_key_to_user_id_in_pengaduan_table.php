@@ -9,6 +9,7 @@ class AddForeignKeyToUserIdInPengaduanTable extends Migration
     public function up()
     {
         Schema::table('pengaduan', function (Blueprint $table) {
+            $table->bigInteger('user_id')->unsigned();
             // Add foreign key constraint to user_id column
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
