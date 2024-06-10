@@ -8,7 +8,7 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link rel="icon" href="img/perisai-logo.png" type="image/png" />
-        <title>Contact Us</title>
+        <title>PERISAI</title>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css" />
@@ -61,41 +61,22 @@
                                 class="nav navbar-nav menu_nav justify-content-end"
                             >
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/">
+                                    <a class="nav-link" href="/dashboard">
                                         Home
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index">
+                                    <a class="nav-link" href="/pengaduan">
                                         Pengaduan
                                     </a>
                                 </li>
                                 <li class="nav-item submenu dropdown">
                                     <a
-                                        href="#"
+                                        href="blog"
                                         class="nav-link dropdown-toggle"
-                                        data-toggle="dropdown"
-                                        role="button"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
                                     >
                                         Blog
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="blog">
-                                                Blog
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a
-                                                class="nav-link"
-                                                href="single-blog"
-                                            >
-                                                Blog Details
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li class="nav-item active">
                                     <a class="nav-link" href="contact">
@@ -103,16 +84,59 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index">App</a>
+                                    <a class="nav-link" href="app">App</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a
-                                        href="{{ route("login") }}"
-                                        class="nav-link"
-                                    >
-                                        Log in
-                                    </a>
-                                </li>
+
+                                @if (Auth::check())
+                                    <li class="nav-item submenu dropdown">
+                                        <a
+                                            href="#"
+                                            class="nav-link dropdown-toggle"
+                                            data-toggle="dropdown"
+                                            role="button"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            {{ Auth::user()->name }}
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a
+                                                    class="nav-link"
+                                                    href="{{ auth()->check() ? "/dashboard" : "/" }}"
+                                                >
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a
+                                                    class="nav-link"
+                                                    href="{{ route("logout") }}"
+                                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                                >
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <form
+                                            id="logout-form"
+                                            action="{{ route("logout") }}"
+                                            method="POST"
+                                            style="display: none"
+                                        >
+                                            @csrf
+                                        </form>
+                                    </li>
+                                @else
+                                    <li class="nav-item">
+                                        <a
+                                            href="{{ route("login") }}"
+                                            class="nav-link"
+                                        >
+                                            Log in
+                                        </a>
+                                    </li>
+                                @endif
                             </ul>
                         </div>
                     </div>
@@ -135,7 +159,7 @@
 
         <!--================Contact Area =================-->
         <section class="contact_area section_gap">
-        <h1 class="text-center b-10">Email Us</h1>
+            <h1 class="text-center b-10">Email Us</h1>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
@@ -152,7 +176,9 @@
                             </div>
                             <div class="info_item">
                                 <i class="lnr lnr-envelope"></i>
-                                <h6><a href="#">ppks@telkomuniversity.ac.id</a></h6>
+                                <h6>
+                                    <a href="#">ppks@telkomuniversity.ac.id</a>
+                                </h6>
                                 <p>Send us your query anytime!</p>
                             </div>
                         </div>
@@ -163,7 +189,9 @@
                             action="https://formsubmit.co/dirgantaksa.13@gmail.com"
                             method="POST"
                             id="contactForm"
-                            reset() return False
+                            reset()
+                            return
+                            False
                         >
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -239,7 +267,11 @@
                         <div class="footer_top flex-column">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="img/perisai-logo.png" alt="" style="width:150px"/>
+                                    <img
+                                        src="img/perisai-logo.png"
+                                        alt=""
+                                        style="width: 150px"
+                                    />
                                 </a>
                             </div>
                         </div>

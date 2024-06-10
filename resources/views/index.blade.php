@@ -13,7 +13,6 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="vendors/linericon/style.css" />
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link
             rel="stylesheet"
             href="vendors/owl-carousel/owl.carousel.min.css"
@@ -67,41 +66,20 @@
                                 class="nav navbar-nav menu_nav justify-content-end"
                             >
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">
-                                        Home
-                                    </a>
+                                    <a class="nav-link" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/pengaduan">
                                         Pengaduan
                                     </a>
                                 </li>
-                                <li class="nav-item submenu dropdown">
+                                <li class="nav-item">
                                     <a
-                                        href="#"
+                                        href="blog"
                                         class="nav-link dropdown-toggle"
-                                        data-toggle="dropdown"
-                                        role="button"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
                                     >
                                         Blog
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="blog">
-                                                Blog
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a
-                                                class="nav-link"
-                                                href="single-blog"
-                                            >
-                                                Blog Details
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact">
@@ -109,7 +87,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index">App</a>
+                                    <a class="nav-link" href="app">App</a>
                                 </li>
                                 <li class="nav-item">
                                     <a

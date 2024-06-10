@@ -33,8 +33,11 @@ Route::get('/chatbot', function (){
     return view('chatbot');
 });
 
-Route::post('send', [ChatBotController::class, 'sendChat']);
+Route::get('/app', function (){
+    return view('app');
+});
 
+Route::post('send', [ChatBotController::class, 'sendChat']);
 Route::get('/get_posts', [PostController::class, 'getPosts']);
 
 Route::middleware([

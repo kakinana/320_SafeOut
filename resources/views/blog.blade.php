@@ -5,8 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>Blog</title>
+    <link rel="icon" href="img/perisai-logo.png" type="image/png" />
+    <title>PERISAI</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -44,48 +44,126 @@
 <body class="blog_version">
     <!--================ Start Header Area =================-->
     <header class="header_area">
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html">Perisai</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav justify-content-end">
-                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio">Portfolio</a></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                    aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item submenu dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                    aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand logo_h" href="/">
+                            <img
+                                src="img/telu-logo.png"
+                                alt=""
+                                style="height: 75px"
+                            />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div
+                            class="collapse navbar-collapse offset"
+                            id="navbarSupportedContent"
+                        >
+                            <ul
+                                class="nav navbar-nav menu_nav justify-content-end"
+                            >
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/dashboard">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pengaduan">
+                                        Pengaduan
+                                    </a>
+                                </li>
+                                <li class="nav-item active submenu dropdown">
+                                    <a
+                                        href="#"
+                                        class="nav-link dropdown-toggle"
+                                        data-toggle="dropdown"
+                                        role="button"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact">
+                                        Contact
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="app">App</a>
+                                </li>
+
+                                @if (Auth::check())
+                                    <li class="nav-item submenu dropdown">
+                                        <a
+                                            href="#"
+                                            class="nav-link dropdown-toggle"
+                                            data-toggle="dropdown"
+                                            role="button"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            {{ Auth::user()->name }}
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a
+                                                    class="nav-link"
+                                                    href="{{ auth()->check() ? "/dashboard" : "/" }}"
+                                                >
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a
+                                                    class="nav-link"
+                                                    href="{{ route("logout") }}"
+                                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                                >
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <form
+                                            id="logout-form"
+                                            action="{{ route("logout") }}"
+                                            method="POST"
+                                            style="display: none"
+                                        >
+                                            @csrf
+                                        </form>
+                                    </li>
+                                @else
+                                    <li class="nav-item">
+                                        <a
+                                            href="{{ route("login") }}"
+                                            class="nav-link"
+                                        >
+                                            Log in
+                                        </a>
+                                    </li>
+                                @endif
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--================ End Header Area =================-->
+                </nav>
+            </div>
+        </header>
+        <!--================ End Header Area =================-->
 
    <!--================ Start Banner Area =================-->
    <section class="banner_area" style="padding: 20px 0;"> <!-- Adjusted padding -->
